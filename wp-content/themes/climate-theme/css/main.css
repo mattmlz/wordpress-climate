@@ -1,3 +1,35 @@
+/* MIXINS */
+/* =============================== 
+ HOW TO USE MIXINS FOR RESPONSIVE :
+ .container {
+ //your global css (specified $globalMaxWidth: 1200px;)
+ // 550px window width and more
+ @include screen-xs {
+ //your scss for this device
+ }
+ // 980px window width and more
+ @include screen-m {
+ //your scss for this device
+ }
+ }
+ ===============================*/
+/* VARS */
+/* BASE */
+/*
+ Font weights, according to Mozilla's recommendations :
+ 100 : Thin
+ 300 : Light
+ 400 : Regular
+ 500 : Medium
+ 600 : Semi-Bold
+ 700 : Bold
+ 800 : Black
+ */
+body {
+  font-family: Arial, "Times New Roman", "Bitstream Charter", Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
  v2.0 | 20110126
  License: none (public domain)
@@ -31,3 +63,5 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* COMPONENTS */
+/* PAGES */

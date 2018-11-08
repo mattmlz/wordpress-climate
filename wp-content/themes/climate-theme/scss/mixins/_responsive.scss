@@ -1,0 +1,74 @@
+/* =============================== 
+HOW TO USE MIXINS FOR RESPONSIVE :
+
+.container {
+    //your global css (specified $globalMaxWidth: 1200px;)
+
+    // 550px window width and more
+    @include screen-xs {
+        //your scss for this device
+    }
+
+    // 980px window width and more
+    @include screen-m {
+        //your scss for this device
+    }
+}
+
+===============================*/
+
+//320px devices --> rarely use
+@mixin screen-xxs {
+  @media (min-width: #{$screen-size-xxs}) {
+    @content;
+  }
+}
+
+//550px devices
+@mixin screen-xs {
+  @media (min-width: #{$screen-size-xs}) {
+    @content;
+  }
+}
+
+//750px devices
+@mixin screen-s {
+  @media (min-width: #{$screen-size-s}) {
+    @content;
+  }
+}
+
+//980px devices
+@mixin screen-m {
+  @media (min-width: #{$screen-size-m}) {
+    @content;
+  }
+}
+
+//1200px devices
+@mixin screen-l {
+  @media (min-width: #{$screen-size-l}) {
+    @content;
+  }
+}
+
+//1400px devices
+@mixin screen-xl {
+  @media (min-width: #{$screen-size-xl}) {
+    @content;
+  }
+}
+
+//1600px devices
+@mixin screen-xxl {
+  @media (min-width: #{$screen-size-xxl}) {
+    @content;
+  }
+}
+
+//1820px devices
+@mixin screen-xxxl {
+  @media (min-width: #{$screen-size-xxxl}) {
+    @content;
+  }
+}

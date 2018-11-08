@@ -1,14 +1,17 @@
-/* BASE */
-@import "base/base-layout";
-@import "base/fonts";
-@import "base/reset";
-
-/* COMPONENTS */
-
 /* MIXINS */
-
-/* PAGES */
+@import "mixins/responsive";
 
 /* VARS */
 @import "vars/breakpoints";
 @import "vars/colors";
+
+/* BASE */
+@import "base/fonts";
+@import "base/base-layout";
+@import "base/reset";
+
+/* COMPONENTS */
+
+
+/* PAGES */
+
