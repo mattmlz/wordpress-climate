@@ -85,10 +85,12 @@ Thumbs.db
 # "mu-plugins" directory
 # "plugins" directory
 # "themes" directory
+# "wp-cache-config.php" file
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
+!wp-content/wp-cache-config.php
 
 # ignore these plugins from the core
 wp-content/plugins/hello.php
