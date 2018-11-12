@@ -1,5 +1,56 @@
-footer.footer {
+footer#footer {
   width: 100vw;
   height: 1050px;
   background-color: black;
+  color: $white-text;
+  font-family: $font-avenir;
+
+  div.cta-testimonial {
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-weight: $font-weight-black;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 660px;
+      margin-top: 40px;
+      text-align: center;
+      font-weight: $font-weight-medium;
+      font-size: 24px;
+    }
+
+    a.cta-testify {
+      width: 180px;
+      height: 50px;
+      margin-top: 20px;
+      font-weight: $font-weight-heavy;
+      background-color: $green-button;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 0px solid;
+      outline: 1px solid;
+      outline-color: rgba(82, 165, 93, .5);
+      outline-offset: 0px;
+      text-shadow: none;
+      transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+      &:hover {
+        @include button-hover;
+      }
+
+      &:link, &:visited, &:active {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
 }
