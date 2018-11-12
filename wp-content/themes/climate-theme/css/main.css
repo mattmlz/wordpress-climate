@@ -209,8 +209,22 @@ footer#footer div.footer-links {
 footer#footer div.footer-links table.main-footer-links tr td {
   width: calc(100vw/3);
 }
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table {
+  margin-top: 50px;
+}
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr th {
+  font-weight: 900;
+  font-size: 22px;
+  text-align: left;
+  margin-top: 50px;
+}
 footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td {
   display: block;
+  margin: 10px 0;
+}
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:link, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:visited, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:active, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 footer#footer div.footer-links table.main-footer-links tr td.logo {
   height: 255px;

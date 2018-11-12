@@ -86,9 +86,27 @@ footer#footer {
           width: calc(100vw/3);
 
           table.sub-table {
+            margin-top: 50px;
             tr {
+              th {
+                font-weight: $font-weight-heavy;
+                font-size: 22px;
+                text-align: left;
+                margin-top: 50px;
+              }
+
+
               td {
                 display: block;
+                margin: 10px 0;
+
+                a {
+                  &:link, &:visited, &:active, &:hover {
+                    text-decoration: none;
+                    color: $white-text;
+                  }
+                }
+
               }
             }
           }
