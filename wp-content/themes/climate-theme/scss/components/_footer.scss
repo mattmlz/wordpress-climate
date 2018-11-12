@@ -1,6 +1,5 @@
 footer#footer {
   width: 100vw;
-  height: 1050px;
   background-color: black;
   color: $white-text;
   font-family: $font-avenir;
@@ -12,7 +11,7 @@ footer#footer {
     justify-content: center;
     align-items: center;
 
-    h1 {
+    h2 {
       font-weight: $font-weight-black;
       font-size: 35px;
       text-transform: uppercase;
@@ -52,5 +51,40 @@ footer#footer {
         color: inherit;
       }
     }
+  }
+
+  div.newsletter {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: $font-weight-black;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 40px;
+      text-align: center;
+      font-weight: $font-weight-medium;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $green-text;
+    }
+  }
+
+  div.footer-links {
+    height: 255px;
+    background-color: $grey-footer-bg;
+  }
+
+  div.copyright {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
