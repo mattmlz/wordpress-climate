@@ -64,4 +64,9 @@ table {
   border-spacing: 0;
 }
 /* COMPONENTS */
+footer.footer {
+  width: 100vw;
+  height: 1050px;
+  background-color: black;
+}
 /* PAGES */
