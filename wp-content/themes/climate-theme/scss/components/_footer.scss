@@ -19,7 +19,7 @@ footer#footer {
 
     p {
       width: 660px;
-      margin-top: 40px;
+      margin-top: 20px;
       text-align: center;
       font-weight: $font-weight-medium;
       font-size: 24px;
@@ -67,7 +67,7 @@ footer#footer {
     }
 
     p {
-      margin-top: 40px;
+      margin-top: 20px;
       text-align: center;
       font-weight: $font-weight-medium;
       font-size: 18px;
@@ -79,6 +79,29 @@ footer#footer {
   div.footer-links {
     height: 255px;
     background-color: $grey-footer-bg;
+
+    table.main-footer-links {
+      tr {
+        td {
+          width: calc(100vw/3);
+
+          table.sub-table {
+            tr {
+              td {
+                display: block;
+              }
+            }
+          }
+        }
+
+
+        td.logo {
+            height: 255px;
+          img {
+          }
+        }
+      }
+    }
   }
 
   div.copyright {

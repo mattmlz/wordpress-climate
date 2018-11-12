@@ -150,7 +150,7 @@ footer#footer div.cta-testimonial h2 {
 }
 footer#footer div.cta-testimonial p {
   width: 660px;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-weight: 500;
   font-size: 24px;
@@ -195,7 +195,7 @@ footer#footer div.newsletter h2 {
   text-transform: uppercase;
 }
 footer#footer div.newsletter p {
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-weight: 500;
   font-size: 18px;
@@ -206,6 +206,15 @@ footer#footer div.footer-links {
   height: 255px;
   background-color: #333;
 }
+footer#footer div.footer-links table.main-footer-links tr td {
+  width: calc(100vw/3);
+}
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td {
+  display: block;
+}
+footer#footer div.footer-links table.main-footer-links tr td.logo {
+  height: 255px;
+}
 footer#footer div.copyright {
   height: 60px;
   display: flex;
@@ -214,6 +223,7 @@ footer#footer div.copyright {
 }
 div#mc_embed_signup {
   font-family: 'Avenir';
+  margin-top: 25px;
 }
 div#mc_embed_signup div#mc_embed_signup_scroll input {
   height: 45px;
@@ -223,6 +233,6 @@ div#mc_embed_signup div#mc_embed_signup_scroll input {
 div#mc_embed_signup div#mc_embed_signup_scroll div.clear input#mc-embedded-subscribe {
   background-color: #52a55d;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 500;
 }
 /* PAGES */
