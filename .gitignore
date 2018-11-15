@@ -157,3 +157,6 @@ $RECYCLE.BIN/
 
 # Ignore wiki.md
 wiki.md
+
+#Don't ignore all scss
+!wp-content/themes/climate-theme/scss

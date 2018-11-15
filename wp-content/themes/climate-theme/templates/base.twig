@@ -1,6 +1,6 @@
 {% block html_head_container %}
 
-{% include 'html-header.twig' %}
+{% include 'partial/html-header.twig' %}
 	{% block head %}
 	{% endblock %}
 	</head>
@@ -10,12 +10,10 @@
 		<header class="header" >
 			{% block header %}
 				<div class="wrapper">
-					<h1 class="hdr-logo" role="banner">
-						<a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
-					</h1>
-					<nav id="nav-main" class="nav-main" role="navigation">
+					{% include 'partial/header.twig' %}
+					{#<nav id="nav-main" class="nav-main" role="navigation">
 						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav><!-- #nav -->
+					</nav>#}
 				</div>
 			{% endblock %}
 		</header>
@@ -36,7 +34,7 @@
 
 		{% block footer %}
 			<footer id="footer">
-				{% include 'footer.twig' %}
+				{% include 'partial/footer.twig' %}
 			</footer>
 			{{ function('wp_footer') }}
 		{% endblock %}
