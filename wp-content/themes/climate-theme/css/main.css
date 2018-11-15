@@ -158,6 +158,34 @@ a.cta-button:link, a.cta-button:visited, a.cta-button:active {
   color: inherit;
 }
 /* PARTIALS */
+header.header {
+  width: 100vw;
+  height: 925px;
+  background-color: black;
+  color: #fff;
+  font-family: 'Avenir';
+}
+header.header div.wrapper {
+  padding: 40px 0;
+}
+header.header div.wrapper div.top-navbar {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header.header div.wrapper div.top-navbar img.header-logo {
+  width: 135px;
+  height: 90px;
+}
+header.header div.wrapper div.top-navbar div.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header.header div.wrapper div.top-navbar div.nav-links p.nav-link {
+  margin: 0 20px;
+}
 footer#footer {
   width: 100vw;
   background-color: black;
