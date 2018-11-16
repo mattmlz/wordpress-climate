@@ -8,7 +8,7 @@ header.header {
   div.wrapper {
     padding: 40px 0;
 
-    div.top-navbar {
+    nav.top-navbar {
       margin: 0 100px;
       display: flex;
       flex-direction: row;
@@ -26,10 +26,12 @@ header.header {
 
         p.nav-link {
           margin: 0 20px;
+
+          a.nav-link {
+            @include link-interaction;
+          }
         }
       }
     }
-
-
   }
 }

@@ -74,10 +74,7 @@ footer#footer {
                 margin: 10px 0;
 
                 a {
-                  &:link, &:visited, &:active, &:hover {
-                    text-decoration: none;
-                    color: $white-text;
-                  }
+                  @include link-interaction;
                 }
 
               }
