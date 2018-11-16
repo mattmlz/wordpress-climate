@@ -1,5 +1,29 @@
+{% set wrapper_class = "homepage" %}
 {% extends "base.twig" %}
 
 {% block content %}
-    <div>TOTO</div>
+    <div class="block subjects-block">
+        <h1>Nos sujets</h1>
+        <h2>Tous nos sujets</h2>
+
+        <div class="subjects-wrapper">
+            <div class="subject">
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="block about-wrapper">
+        <h1>À propos de nous</h1>
+        <img src="" alt="">
+        <p class="about-text"><span class="ecologia">Ecologia</span> est un blog qui met en avant l’impact de l’activité de l’Homme sur notre Terre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh facilisis sem ultrices scelerisque. Curabitur sit amet scelerisque ipsum. Cras lacinia ligula non pharetra condimentum.</p>
+        <div class="cta-button">
+            <a href="{{ site.link }}/about" class="cta-button">En savoir plus</a>
+        </div>
+    </div>
+
+    <div class="block articles-wrapper">
+        <h1>Nos articles</h1>
+        <h2>Nos derniers articles</h2>
+    </div>
 {% endblock %}

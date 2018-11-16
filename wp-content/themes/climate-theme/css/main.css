@@ -161,7 +161,7 @@ a.cta-button:link, a.cta-button:visited, a.cta-button:active {
 header.header {
   width: 100vw;
   height: 150px;
-  background-color: black;
+  background-color: #000;
   color: #fff;
   font-family: 'Avenir';
 }
@@ -200,7 +200,7 @@ header.header div.wrapper nav.top-navbar div.nav-links p.nav-link a.nav-link:hov
 }
 footer#footer {
   width: 100vw;
-  background-color: black;
+  background-color: #000;
   color: #fff;
   font-family: 'Avenir';
 }
@@ -299,3 +299,25 @@ div#mc_embed_signup div#mc_embed_signup_scroll div.clear input#mc-embedded-subsc
   font-weight: 500;
 }
 /* PAGES */
+section.content-wrapper {
+  background-color: #000;
+}
+section.content-wrapper div.wrapper.homepage {
+  margin: 0 100px;
+  font-family: 'Avenir';
+  color: #fff;
+}
+section.content-wrapper div.wrapper.homepage h1 {
+  font-weight: 800;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+section.content-wrapper div.wrapper.homepage h2 {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #047713;
+}
+section.content-wrapper div.wrapper.homepage div.block {
+  padding: 100px 0;
+}

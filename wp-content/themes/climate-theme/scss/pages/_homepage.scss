@@ -1,0 +1,31 @@
+section.content-wrapper {
+  background-color: $black-background;
+
+  div.wrapper.homepage {
+    margin: 0 100px;
+    font-family: $font-avenir;
+    color: $white-text;
+
+
+    h1 {
+      font-weight: $font-weight-black;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-weight: $font-weight-medium;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: $green-text;
+    }
+
+    div.block {
+      padding: 100px 0;
+    }
+
+    div.subjects-block {
+
+    }
+  }
+}
