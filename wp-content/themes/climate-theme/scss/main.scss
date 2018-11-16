@@ -1,5 +1,8 @@
 /* MIXINS */
 @import "mixins/responsive";
+@import "mixins/button-hover";
+@import "mixins/link-hover";
+@import "mixins/link";
 
 /* VARS */
 @import "vars/breakpoints";
@@ -11,7 +14,12 @@
 @import "base/reset";
 
 /* COMPONENTS */
+@import "components/cta-button";
 
+/* PARTIALS */
+@import "partials/header";
+@import "partials/footer";
+@import "partials/mailchimp-form";
 
 /* PAGES */
 

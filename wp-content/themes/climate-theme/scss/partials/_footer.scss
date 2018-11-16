@@ -1,0 +1,101 @@
+footer#footer {
+  width: 100vw;
+  background-color: black;
+  color: $white-text;
+  font-family: $font-avenir;
+
+  div.cta-testimonial {
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: $font-weight-black;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 660px;
+      margin-top: 20px;
+      text-align: center;
+      font-weight: $font-weight-medium;
+      font-size: 24px;
+    }
+  }
+
+  div.newsletter {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-weight: $font-weight-black;
+      font-size: 35px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: $font-weight-medium;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $green-text;
+    }
+  }
+
+  div.footer-links {
+    height: 255px;
+    background-color: $grey-footer-bg;
+
+    table.main-footer-links {
+      tr {
+        td {
+          width: calc(100vw/3);
+
+          table.sub-table {
+            margin-top: 50px;
+            tr {
+              th {
+                font-weight: $font-weight-heavy;
+                font-size: 22px;
+                text-align: left;
+                margin-top: 50px;
+              }
+
+
+              td {
+                display: block;
+                margin: 10px 0;
+
+                a {
+                  @include link-interaction;
+                }
+
+              }
+            }
+          }
+        }
+
+
+        td.logo {
+            height: 255px;
+          img {
+          }
+        }
+      }
+    }
+  }
+
+  div.copyright {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

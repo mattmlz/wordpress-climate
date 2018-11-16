@@ -1,0 +1,19 @@
+div#mc_embed_signup {
+  font-family: $font-avenir;
+  margin-top: 25px;
+  div#mc_embed_signup_scroll {
+    input {
+      height: 45px;
+      border-radius: 1px;
+      padding: 0px 1em;
+    }
+
+    div.clear {
+      input#mc-embedded-subscribe {
+        background-color: $green-button;
+        font-size: 14px;
+        font-weight: $font-weight-medium;
+      }
+    }
+  }
+}

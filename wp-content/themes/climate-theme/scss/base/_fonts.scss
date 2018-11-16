@@ -1,4 +1,5 @@
 $fallback-font: Arial, "Times New Roman", "Bitstream Charter", Times, serif;
+$font-avenir: 'Avenir';
 
 /*
 
@@ -21,3 +22,82 @@ $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 $font-weight-black: 800;
+$font-weight-heavy: 900;
+
+//be careful by using link being from css directory
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-MediumOblique.ttf') format('truetype');
+  font-weight: $font-weight-medium;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Oblique.ttf') format('truetype');
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Heavy.ttf') format('truetype');
+  font-weight: $font-weight-heavy;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Black Oblique';
+  src: url('../assets/fonts/Avenir-BlackOblique.ttf') format('truetype');
+  font-weight: $font-weight-black;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Black.ttf') format('truetype');
+  font-weight: $font-weight-black;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-BookOblique.ttf') format('truetype');
+  font-weight: $font-weight-regular;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-HeavyOblique.ttf') format('truetype');
+  font-weight: $font-weight-heavy;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-LightOblique.ttf') format('truetype');
+  font-weight: $font-weight-light;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Medium.ttf') format('truetype');
+  font-weight: $font-weight-medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('../assets/fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: $font-weight-regular;
+  font-style: normal;
+}
