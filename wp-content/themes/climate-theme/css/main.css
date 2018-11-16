@@ -160,7 +160,7 @@ a.cta-button:link, a.cta-button:visited, a.cta-button:active {
 /* PARTIALS */
 header.header {
   width: 100vw;
-  height: 925px;
+  height: 150px;
   background-color: black;
   color: #fff;
   font-family: 'Avenir';
@@ -168,23 +168,35 @@ header.header {
 header.header div.wrapper {
   padding: 40px 0;
 }
-header.header div.wrapper div.top-navbar {
+header.header div.wrapper nav.top-navbar {
   margin: 0 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-header.header div.wrapper div.top-navbar img.header-logo {
+header.header div.wrapper nav.top-navbar img.header-logo {
   width: 135px;
   height: 90px;
 }
-header.header div.wrapper div.top-navbar div.nav-links {
+header.header div.wrapper nav.top-navbar div.nav-links {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-header.header div.wrapper div.top-navbar div.nav-links p.nav-link {
+header.header div.wrapper nav.top-navbar div.nav-links p.nav-link {
   margin: 0 20px;
+}
+header.header div.wrapper nav.top-navbar div.nav-links p.nav-link a.nav-link {
+  background: linear-gradient(to bottom, #047713 0%, #047713 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-size 0.2s;
+}
+header.header div.wrapper nav.top-navbar div.nav-links p.nav-link a.nav-link:hover {
+  background-size: 4px 4px;
 }
 footer#footer {
   width: 100vw;
@@ -251,9 +263,17 @@ footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr 
   display: block;
   margin: 10px 0;
 }
-footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:link, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:visited, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:active, footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:hover {
-  text-decoration: none;
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a {
+  background: linear-gradient(to bottom, #047713 0%, #047713 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
   color: #fff;
+  text-decoration: none;
+  transition: background-size 0.2s;
+}
+footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr td a:hover {
+  background-size: 4px 4px;
 }
 footer#footer div.footer-links table.main-footer-links tr td.logo {
   height: 255px;
