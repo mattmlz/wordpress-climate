@@ -8,6 +8,11 @@
  * @since   Timber 0.1
  */
 
+
+/********************
+ * TIMBER FUNCTIONS *
+ *******************/
+
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
 		echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';
@@ -52,7 +57,16 @@ class StarterSite extends Timber\Site {
 	}
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies() {
+	    $taxonomy = 'page_type';
+	    $object_type = 'page';
+	    $taxonomy_args = array(
+	        'label' => 'Page type',
+            'rewrite' => false,
+            'hierarchical' => false,
+            'show_in_rest' => true,
+        );
 
+	    register_taxonomy($taxonomy, $object_type, $taxonomy_args);
 	}
 
 	/** This is where you add some context
