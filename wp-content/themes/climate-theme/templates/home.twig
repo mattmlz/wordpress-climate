@@ -2,14 +2,21 @@
 {% extends "base.twig" %}
 
 {% block content %}
+    <div class="slider">
+
+    </div>
+
     <div class="block subjects-block">
         <h1>Nos sujets</h1>
         <h2>Tous nos sujets</h2>
 
         <div class="subjects-wrapper">
-            <div class="subject">
-                
-            </div>
+            {% for post in thematics %}
+                <div class="subject">
+                    <h3>{{ post.title }}</h3>
+                    <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                </div>
+            {% endfor %}
         </div>
     </div>
 
