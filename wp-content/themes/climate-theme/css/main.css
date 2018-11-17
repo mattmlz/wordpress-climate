@@ -361,6 +361,31 @@ section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wra
   bottom: 0;
   left: 0;
 }
-section.content-wrapper div.wrapper.homepage div.about-block {
-  background-color: red;
+section.content-wrapper div.wrapper.homepage div.about-block div.content {
+  position: relative;
+}
+section.content-wrapper div.wrapper.homepage div.about-block div.content h1 {
+  position: absolute;
+  bottom: 445px;
+  left: 855px;
+}
+section.content-wrapper div.wrapper.homepage div.about-block div.content p.about-text {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28pt;
+  background-color: #fff;
+  position: absolute;
+  bottom: 150px;
+  left: 540px;
+  padding: 35px 110px 35px 50px;
+}
+section.content-wrapper div.wrapper.homepage div.about-block div.content p.about-text span.ecologia {
+  font-weight: 900;
+  color: #047713;
+}
+section.content-wrapper div.wrapper.homepage div.about-block div.content div.cta-button {
+  position: absolute;
+  bottom: 45px;
+  right: 0;
 }

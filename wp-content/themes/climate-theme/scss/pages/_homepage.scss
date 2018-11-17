@@ -55,7 +55,38 @@ section.content-wrapper {
     }
 
     div.about-block {
-      background-color: red;
+      div.content {
+        position: relative;
+
+        h1 {
+          position: absolute;
+          bottom: 445px;
+          left: 855px;
+        }
+
+        p.about-text {
+          color: $black-background;
+          font-weight: $font-weight-medium;
+          font-size: 18px;
+          line-height: 28pt;
+          background-color: $white-text;
+          position: absolute;
+          bottom: 150px;
+          left: 540px;
+          padding: 35px 110px 35px 50px;
+
+          span.ecologia {
+            font-weight: $font-weight-heavy;
+            color: $green-text;
+          }
+        }
+
+        div.cta-button {
+          position: absolute;
+          bottom: 45px;
+          right: 0;
+        }
+      }
     }
   }
 }
