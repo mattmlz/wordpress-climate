@@ -180,6 +180,8 @@ header.header {
   background-color: #000;
   color: #fff;
   font-family: 'Avenir';
+  position: fixed;
+  z-index: 99999999;
 }
 header.header div.wrapper {
   padding: 40px 0;
@@ -270,6 +272,7 @@ footer#footer div.footer-links table.main-footer-links tr td table.sub-table {
   margin-top: 50px;
 }
 footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr th {
+  color: #fff;
   font-weight: 900;
   font-size: 22px;
   text-align: left;
@@ -336,6 +339,9 @@ section.content-wrapper div.wrapper.homepage h2 {
 }
 section.content-wrapper div.wrapper.homepage div.block {
   padding: 100px 0;
+}
+section.content-wrapper div.wrapper.homepage div.subjects-block {
+  padding-top: 150px;
 }
 section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper {
   display: flex;

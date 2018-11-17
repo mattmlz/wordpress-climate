@@ -4,6 +4,8 @@ header.header {
   background-color: $black-background;
   color: $white-text;
   font-family: $font-avenir;
+  position: fixed;
+  z-index: 99999999;
 
   div.wrapper {
     padding: 40px 0;
