@@ -115,6 +115,7 @@ class StarterSite extends Timber\Site {
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new Timber\Menu();
 		$context['site'] = $this;
+		//Homepage thematics
         $args = array(
             'post_type' => 'thematics',
             'posts_per_page' => 4,
@@ -122,11 +123,11 @@ class StarterSite extends Timber\Site {
                 'date' => 'ASC',
             ),
         );
-
         //send datas ton context
         $context['thematics'] = Timber::get_posts($args);
 		return $context;
-	}
+
+    }
 
 	public function theme_supports() {
 		// Add default posts and comments RSS feed links to head.

@@ -36,8 +36,31 @@
         </div>
     </div>
 
-    <div class="block articles-wrapper">
+    <div class="block articles-block">
         <h1>Nos articles</h1>
         <h2>Nos derniers articles</h2>
+
+                {#{% for tag in post.tags %}
+                    {{ tag }}
+                {% endfor %}#}
+        <div class="articles-wrapper">
+            {% for post in posts %}
+                <div class="article">
+                    <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    <div class="content">
+
+                        <p class="tag">
+                            {% for tag in post.tags %}
+                                {{ tag }}
+                            {% endfor %}
+                        </p>
+
+                        <a href="{{ post.link }}" class="post-title">{{ post.title }}</a>
+
+                        <p class="date">{{ post.date }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
