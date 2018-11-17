@@ -13,19 +13,23 @@
         <div class="subjects-wrapper">
             {% for post in thematics %}
                 <div class="subject">
-                    <h3>{{ post.title }}</h3>
-                    <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    <div class="thematic-img">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    </div>
+                    <div class="thematic-text">
+                        <a class="cta-white" href="{{ post.link }}">{{ post.title }}</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>
     </div>
 
-    <div class="block about-wrapper">
+    <div class="block about-block">
         <h1>À propos de nous</h1>
         <img src="" alt="">
         <p class="about-text"><span class="ecologia">Ecologia</span> est un blog qui met en avant l’impact de l’activité de l’Homme sur notre Terre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh facilisis sem ultrices scelerisque. Curabitur sit amet scelerisque ipsum. Cras lacinia ligula non pharetra condimentum.</p>
         <div class="cta-button">
-            <a href="{{ site.link }}/about" class="cta-button">En savoir plus</a>
+            <a href="/about" class="cta-button">En savoir plus</a>
         </div>
     </div>
 

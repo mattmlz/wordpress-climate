@@ -157,6 +157,22 @@ a.cta-button:link, a.cta-button:visited, a.cta-button:active {
   text-decoration: none;
   color: inherit;
 }
+a.cta-white {
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  font-family: 'Avenir';
+  font-weight: 900;
+  color: #fff;
+  transition: background-color, color 0.3s ease-in;
+}
+a.cta-white:hover {
+  background-color: #fff;
+  color: #333 !important;
+}
+a.cta-white:link, a.cta-white:visited, a.cta-white:active {
+  text-decoration: none;
+  color: inherit;
+}
 /* PARTIALS */
 header.header {
   width: 100vw;
@@ -320,4 +336,31 @@ section.content-wrapper div.wrapper.homepage h2 {
 }
 section.content-wrapper div.wrapper.homepage div.block {
   padding: 100px 0;
+}
+section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper div.subject {
+  width: 600px;
+  height: 250px;
+  position: relative;
+  text-align: center;
+  margin: 30px 0;
+}
+section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper div.subject div.thematic-img {
+  position: relative;
+  display: block;
+}
+section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper div.subject div.thematic-text {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+section.content-wrapper div.wrapper.homepage div.about-block {
+  background-color: red;
 }

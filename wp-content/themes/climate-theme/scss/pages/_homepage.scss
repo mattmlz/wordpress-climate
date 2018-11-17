@@ -25,7 +25,37 @@ section.content-wrapper {
     }
 
     div.subjects-block {
+      div.subjects-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
+        div.subject {
+          width: 600px;
+          height: 250px;
+          position: relative;
+          text-align: center;
+          margin: 30px 0;
+
+          div.thematic-img {
+            position: relative;
+            display: block;
+          }
+
+          div.thematic-text {
+            position: absolute;
+            top: 120px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    div.about-block {
+      background-color: red;
     }
   }
 }

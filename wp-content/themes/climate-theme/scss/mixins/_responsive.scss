@@ -52,7 +52,7 @@ HOW TO USE MIXINS FOR RESPONSIVE :
   }
 }
 
-//1400px devices
+//1440px devices
 @mixin screen-xl {
   @media (min-width: #{$screen-size-xl}) {
     @content;
