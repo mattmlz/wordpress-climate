@@ -49,6 +49,7 @@ class StarterSite extends Timber\Site {
 		add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'init', array( $this, 'add_thematics' ) );
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -57,17 +58,48 @@ class StarterSite extends Timber\Site {
 	}
 	/** This is where you can register custom taxonomies. */
 	public function register_taxonomies() {
-	    $taxonomy = 'page_type';
-	    $object_type = 'page';
-	    $taxonomy_args = array(
-	        'label' => 'Page type',
-            'rewrite' => false,
-            'hierarchical' => false,
-            'show_in_rest' => true,
+
+	}
+
+	public function add_thematics() {
+       $post_type = 'thematics';
+
+       $labels = array (
+           'name'               => 'Thematics',
+           'singular_name'      => 'Thematic',
+           'all_items'          => __('All thematics'),
+           'add_new'            => __('New thematic'),
+           'add_new_item'       => __('Add new thematic'),
+           'edit_item'          => __("Edit thematic"),
+           'new_item'           => __('New thematic'),
+           'view_item'          => __('View thematic'),
+           'search_items'       => __('Find thematic'),
+           'not_found'          => __("No result"),
+           'not_found_in_trash' => __("No result"),
+           'parent_item_colon'  => __("Thematic parent"),
+           'menu_name'          => 'Thematics',
+       );
+
+        $args = array(
+            'labels'              => $labels,
+            'hierarchical'        => false,
+            'supports'            => array( 'title','thumbnail','editor', 'revisions'),
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'menu_position'       => 3,
+            'menu_icon'           => 'dashicons-admin-customizer',
+            'show_in_nav_menus'   => true,
+            'publicly_queryable'  => true,
+            'exclude_from_search' => false,
+            'has_archive'         => false,
+            'query_var'           => true,
+            'can_export'          => true,
+            'rewrite'             => array( 'slug' => $post_type )
         );
 
-	    register_taxonomy($taxonomy, $object_type, $taxonomy_args);
-	}
+        register_post_type($post_type, $args );
+    }
 
 	/** This is where you add some context
 	 *
