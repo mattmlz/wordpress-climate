@@ -40,20 +40,20 @@
         <h1>Nos articles</h1>
         <h2>Nos derniers articles</h2>
 
-                {#{% for tag in post.tags %}
-                    {{ tag }}
-                {% endfor %}#}
         <div class="articles-wrapper">
+
             {% for post in posts %}
                 <div class="article">
-                    <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    <div class="post-thumnail">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    </div>
                     <div class="content">
 
-                        <p class="tag">
+                        <span class="tag">
                             {% for tag in post.tags %}
                                 {{ tag }}
                             {% endfor %}
-                        </p>
+                        </span>
 
                         <a href="{{ post.link }}" class="post-title">{{ post.title }}</a>
 
@@ -61,6 +61,7 @@
                     </div>
                 </div>
             {% endfor %}
+
         </div>
     </div>
 {% endblock %}
