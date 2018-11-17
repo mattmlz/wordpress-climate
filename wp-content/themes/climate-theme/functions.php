@@ -99,6 +99,19 @@ class StarterSite extends Timber\Site {
         );
 
         register_post_type($post_type, $args );
+
+        $query_args = array(
+            'post_type' => 'thematics',
+            'posts_per_page' => 4,
+            'orderby' => array(
+                'date' => 'ASC',
+            ),
+        );
+
+        //send datas ton context
+        $context['thematics'] = Timber::get_posts($query_args);
+        //send context to template
+        Timber::render( 'home.twig', $context );
     }
 
 	/** This is where you add some context
