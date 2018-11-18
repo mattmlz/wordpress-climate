@@ -10,6 +10,7 @@ footer#footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url("../../../../../wp-content/uploads/2018/11/bg_landingpage.png");
 
     h2 {
       font-weight: $font-weight-black;
@@ -51,16 +52,21 @@ footer#footer {
 
   div.footer-links {
     height: 255px;
+    padding: 0 30px;
     background-color: $grey-footer-bg;
 
     table.main-footer-links {
       tr {
         td {
           width: calc(100vw/3);
+          vertical-align: middle;
 
           table.sub-table {
             margin-top: 50px;
             tr {
+              th, td {
+                vertical-align: middle;
+              }
               th {
                 color: $white-text;
                 font-weight: $font-weight-heavy;

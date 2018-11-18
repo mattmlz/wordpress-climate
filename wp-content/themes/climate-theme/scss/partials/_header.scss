@@ -7,31 +7,29 @@ header.header {
   position: fixed;
   z-index: 99999999;
 
-  div.wrapper {
-    padding: 40px 0;
 
-    nav.top-navbar {
-      margin: 0 100px;
+  nav.top-navbar {
+    padding: 40px 0;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img.header-logo {
+      width: 120px;
+      height: 60px;
+    }
+
+    div.nav-links {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      align-items: center;
 
-      img.header-logo {
-        width: 135px;
-        height: 90px;
-      }
+      p.nav-link {
+        margin: 0 20px;
 
-      div.nav-links {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        p.nav-link {
-          margin: 0 20px;
-
-          a.nav-link {
-            @include link-interaction;
-          }
+        a.nav-link {
+          @include link-interaction;
         }
       }
     }
