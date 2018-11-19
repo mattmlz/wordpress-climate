@@ -3,7 +3,9 @@
 
 {% block content %}
     <div class="slider">
-
+        <h1 class="title-slider">Ecologia</h1>
+        <p>Découvrez à travers quatres aspects, les impacts positifs et négatifs de nos activités sur notre Terre.</p>
+        <img class="mouse-dropdown" src="{{ site.url }}/wp-content/uploads/2018/11/mouse.png" alt="mouse-dropdown">
     </div>
 
     <div class="block subjects-block">
@@ -42,7 +44,7 @@
 
         <div class="articles-wrapper">
 
-            {% for post in posts %}
+            {% for post in posts|slice(0, 3) %}
                 <div class="article">
                     <div class="post-thumnail">
                         <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">

@@ -95,7 +95,7 @@ body {
   font-family: Arial, "Times New Roman", "Bitstream Charter", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #000;
+  background-color: #171717;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
  v2.0 | 20110126
@@ -178,7 +178,7 @@ a.cta-white:link, a.cta-white:visited, a.cta-white:active {
 header.header {
   width: 100vw;
   height: 150px;
-  background-color: #000;
+  background-color: #171717;
   color: #fff;
   font-family: 'Avenir';
   position: fixed;
@@ -217,7 +217,7 @@ header.header nav.top-navbar div.nav-links p.nav-link a.nav-link:hover {
 }
 footer#footer {
   width: 100vw;
-  background-color: #000;
+  background-color: #171717;
   color: #fff;
   font-family: 'Avenir';
 }
@@ -324,10 +324,11 @@ div#mc_embed_signup div#mc_embed_signup_scroll div.clear input#mc-embedded-subsc
 }
 /* PAGES */
 section.content-wrapper {
-  background-color: #000;
+  background-color: #171717;
 }
 section.content-wrapper div.wrapper.homepage {
   margin: 0 100px;
+  padding-top: 100px;
   font-family: 'Avenir';
   color: #fff;
 }
@@ -342,11 +343,29 @@ section.content-wrapper div.wrapper.homepage h2 {
   text-transform: uppercase;
   color: #047713;
 }
+section.content-wrapper div.wrapper.homepage div.slider {
+  height: 80vh;
+  background-image: url("../../../../../wp-content/uploads/2018/11/bg_landingpage.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section.content-wrapper div.wrapper.homepage div.slider h1.title-slider {
+  font-size: 5rem;
+}
+section.content-wrapper div.wrapper.homepage div.slider p {
+  max-width: 650px;
+  margin: 30px 0;
+  text-align: center;
+  font-size: 38px;
+  line-height: 48px;
+}
+section.content-wrapper div.wrapper.homepage div.slider img.mouse-dropdown {
+  margin-top: 50px;
+}
 section.content-wrapper div.wrapper.homepage div.block {
   padding: 100px 0;
-}
-section.content-wrapper div.wrapper.homepage div.subjects-block {
-  padding-top: 150px;
 }
 section.content-wrapper div.wrapper.homepage div.subjects-block div.subjects-wrapper {
   display: flex;
@@ -381,7 +400,7 @@ section.content-wrapper div.wrapper.homepage div.about-block div.content h1 {
   left: 855px;
 }
 section.content-wrapper div.wrapper.homepage div.about-block div.content p.about-text {
-  color: #000;
+  color: #171717;
   font-weight: 500;
   font-size: 18px;
   line-height: 28pt;
@@ -421,7 +440,7 @@ section.content-wrapper div.wrapper.homepage div.articles-wrapper div.article di
 section.content-wrapper div.wrapper.homepage div.articles-wrapper div.article div.content {
   width: 500px;
   background-color: #fff;
-  color: #000;
+  color: #171717;
   position: absolute;
   top: 150px;
   left: 30px;
@@ -444,7 +463,7 @@ section.content-wrapper div.wrapper.homepage div.articles-wrapper div.article di
 section.content-wrapper div.wrapper.homepage div.articles-wrapper div.article div.content a.post-title {
   font-weight: 900;
   font-size: 22px;
-  color: #000 !important;
+  color: #171717 !important;
   margin-bottom: 10px !important;
   background: linear-gradient(to bottom, #047713 0%, #047713 100%);
   background-position: 0 100%;

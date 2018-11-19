@@ -3,6 +3,7 @@ section.content-wrapper {
 
   div.wrapper.homepage {
     margin: 0 100px;
+    padding-top: 100px;
     font-family: $font-avenir;
     color: $white-text;
 
@@ -20,12 +21,36 @@ section.content-wrapper {
       color: $green-text;
     }
 
+    div.slider {
+      height: 80vh;
+      background-image: url("../../../../../wp-content/uploads/2018/11/bg_landingpage.png");
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1.title-slider {
+        font-size: 5rem;
+      }
+
+      p {
+        max-width: 650px;
+        margin: 30px 0;
+        text-align: center;
+        font-size: 38px;
+        line-height: 48px;
+      }
+
+      img.mouse-dropdown {
+        margin-top: 50px;
+      }
+    }
+
     div.block {
       padding: 100px 0;
     }
 
     div.subjects-block {
-      padding-top: 150px;
       div.subjects-wrapper {
         display: flex;
         flex-direction: row;
