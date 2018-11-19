@@ -99,11 +99,8 @@ class StarterSite extends Timber\Site {
         );
 
         register_post_type($post_type, $args );
-
-
-        //send context to template
-        //Timber::render( 'home.twig', $context );
     }
+
 
 	/** This is where you add some context
 	 *
