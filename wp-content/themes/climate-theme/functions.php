@@ -50,6 +50,7 @@ class StarterSite extends Timber\Site {
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
 		add_action( 'init', array( $this, 'add_thematics' ) );
+		add_action( 'init', array( $this, 'add_team_members' ) );
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -77,7 +78,7 @@ class StarterSite extends Timber\Site {
            'not_found'          => __("No result"),
            'not_found_in_trash' => __("No result"),
            'parent_item_colon'  => __("Thematic parent"),
-           'menu_name'          => 'Thematics',
+           'menu_name'          => 'Site Thematics',
        );
 
         $args = array(
@@ -87,8 +88,48 @@ class StarterSite extends Timber\Site {
             'public'              => true,
             'show_ui'             => true,
             'show_in_menu'        => true,
-            'menu_position'       => 3,
+            'menu_position'       => 4,
             'menu_icon'           => 'dashicons-admin-customizer',
+            'show_in_nav_menus'   => true,
+            'publicly_queryable'  => true,
+            'exclude_from_search' => false,
+            'has_archive'         => false,
+            'query_var'           => true,
+            'can_export'          => true,
+            'rewrite'             => array( 'slug' => $post_type )
+        );
+
+        register_post_type($post_type, $args );
+    }
+
+    public function add_team_members() {
+       $post_type = 'team';
+
+       $labels = array (
+           'name'               => 'Team',
+           'singular_name'      => 'Team',
+           'all_items'          => __('All team members'),
+           'add_new'            => __('New team member'),
+           'add_new_item'       => __('Add new team member'),
+           'edit_item'          => __("Edit team member"),
+           'new_item'           => __('New team member'),
+           'view_item'          => __('View team member'),
+           'search_items'       => __('Find team member'),
+           'not_found'          => __("No result"),
+           'not_found_in_trash' => __("No result"),
+           'parent_item_colon'  => __("Team members parent"),
+           'menu_name'          => 'Team members',
+       );
+
+        $args = array(
+            'labels'              => $labels,
+            'hierarchical'        => false,
+            'supports'            => array( 'title','thumbnail','editor', 'revisions'),
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'menu_position'       => 5,
+            'menu_icon'           => 'dashicons-admin-users',
             'show_in_nav_menus'   => true,
             'publicly_queryable'  => true,
             'exclude_from_search' => false,
@@ -113,15 +154,20 @@ class StarterSite extends Timber\Site {
 		$context['menu'] = new Timber\Menu();
 		$context['site'] = $this;
 		//Homepage thematics
-        $args = array(
+        $args_thematics = array(
             'post_type' => 'thematics',
             'posts_per_page' => 4,
             'orderby' => array(
                 'date' => 'ASC',
             ),
         );
+        //Team members
+        $args_team = array(
+            'post_type' => 'team',
+        );
         //send datas ton context
-        $context['thematics'] = Timber::get_posts($args);
+        $context['thematics'] = Timber::get_posts($args_thematics);
+        $context['team'] = Timber::get_posts($args_team);
 		return $context;
 
     }
