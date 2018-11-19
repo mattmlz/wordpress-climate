@@ -17,11 +17,14 @@
 
     <div class="the-team">
         <h2>L'équipe</h2>
-        {% for member in team %}
-            <div class="member">
-                <img src="{{ member.thumbnail.src }}" alt="{{ member.title }}">
-                <p class="role">{{ member.content }}</p>
-            </div>
-        {% endfor %}
+        <div class="members">
+            {% for member in team %}
+                <div class="member {{ member.slug }}">
+                    <img src="{{ member.thumbnail.src }}" alt="{{ member.title }}">
+                    <p class="name">{{ member.title }}</p>
+                    <div class="team-role">{{ member.content }}</div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
