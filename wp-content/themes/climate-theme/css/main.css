@@ -192,8 +192,8 @@ header.header nav.top-navbar {
   justify-content: space-between;
 }
 header.header nav.top-navbar img.header-logo {
-  width: 120px;
-  height: 60px;
+  width: 139px;
+  height: 40px;
 }
 header.header nav.top-navbar div.nav-links {
   display: flex;
@@ -301,6 +301,10 @@ footer#footer div.footer-links table.main-footer-links tr td table.sub-table tr 
 }
 footer#footer div.footer-links table.main-footer-links tr td.logo {
   height: 255px;
+}
+footer#footer div.footer-links table.main-footer-links tr td.logo img {
+  width: 259px;
+  height: 75px;
 }
 footer#footer div.copyright {
   height: 60px;
