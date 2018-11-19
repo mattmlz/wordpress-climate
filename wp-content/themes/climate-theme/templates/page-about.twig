@@ -1,0 +1,9 @@
+{% set wrapper_class = "about" %}
+{% extends "base.twig" %}
+
+{% block content %}
+    <h1 class="article-h1">{{post.title}}</h1>
+    <div class="article-body">
+        {{post.content}}
+    </div>
+{% endblock %}
