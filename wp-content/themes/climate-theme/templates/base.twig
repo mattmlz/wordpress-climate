@@ -9,18 +9,13 @@
 	<body class="{{body_class}}" data-template="base.twig">
 		<header class="header" >
 			{% block header %}
-				<div class="wrapper">
-					{% include 'partial/header.twig' %}
-					{#<nav id="nav-main" class="nav-main" role="navigation">
-						{% include "menu.twig" with {'menu': menu.get_items} %}
-					</nav>#}
-				</div>
+				{% include 'partial/header.twig' %}
 			{% endblock %}
 		</header>
 
 		<section id="content" role="main" class="content-wrapper">
 			{% if title %}<h1>{{title}}</h1>{% endif %}
-			<div class="wrapper {{sidebar_class}}">
+			<div class="wrapper {{ wrapper_class }}">
 				{% block content %}
 					Sorry, no content
 				{% endblock %}

@@ -1,0 +1,69 @@
+{% set wrapper_class = "homepage" %}
+{% extends "base.twig" %}
+
+{% block content %}
+    <div class="slider">
+        <h1 class="title-slider">Ecologia</h1>
+        <p>Découvrez à travers quatres aspects, les impacts positifs et négatifs de nos activités sur notre Terre.</p>
+        <img class="mouse-dropdown" src="{{ site.url }}/wp-content/uploads/2018/11/mouse.png" alt="mouse-dropdown">
+    </div>
+
+    <div class="block subjects-block">
+        <h1>Nos sujets</h1>
+        <h2>Tous nos sujets</h2>
+
+        <div class="subjects-wrapper">
+            {% for post in thematics %}
+                <div class="subject">
+                    <div class="thematic-img">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    </div>
+                    <div class="thematic-text">
+                        <a class="cta-white" href="{{ post.link }}">{{ post.title }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="block about-block">
+        <img src="{{ site.url }}/wp-content/uploads/2018/11/about-square.png" alt="">
+
+        <div class="content">
+            <h1>À propos de nous</h1>
+            <p class="about-text"><span class="ecologia">Ecologia</span> est un blog qui met en avant l’impact de l’activité de l’Homme sur notre Terre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh facilisis sem ultrices scelerisque. Curabitur sit amet scelerisque ipsum. Cras lacinia ligula non pharetra condimentum.</p>
+            <div class="cta-button">
+                <a href="/about" class="cta-button">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block articles-block">
+        <h1>Nos articles</h1>
+        <h2>Nos derniers articles</h2>
+
+        <div class="articles-wrapper">
+
+            {% for post in posts|slice(0, 3) %}
+                <div class="article">
+                    <div class="post-thumnail">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    </div>
+                    <div class="content">
+
+                        <span class="tag">
+                            {% for tag in post.tags %}
+                                {{ tag }}
+                            {% endfor %}
+                        </span>
+
+                        <a href="{{ post.link }}" class="post-title">{{ post.title }}</a>
+
+                        <p class="date">{{ post.date }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+{% endblock %}

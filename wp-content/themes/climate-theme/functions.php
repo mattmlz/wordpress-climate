@@ -8,6 +8,11 @@
  * @since   Timber 0.1
  */
 
+
+/********************
+ * TIMBER FUNCTIONS *
+ *******************/
+
 if ( ! class_exists( 'Timber' ) ) {
 	add_action( 'admin_notices', function() {
 		echo '<div class="error"><p>Timber not activated. Make sure you activate the plugin in <a href="' . esc_url( admin_url( 'plugins.php#timber' ) ) . '">' . esc_url( admin_url( 'plugins.php' ) ) . '</a></p></div>';
@@ -44,6 +49,7 @@ class StarterSite extends Timber\Site {
 		add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
 		add_action( 'init', array( $this, 'register_post_types' ) );
 		add_action( 'init', array( $this, 'register_taxonomies' ) );
+		add_action( 'init', array( $this, 'add_thematics' ) );
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -55,6 +61,47 @@ class StarterSite extends Timber\Site {
 
 	}
 
+	public function add_thematics() {
+       $post_type = 'thematics';
+
+       $labels = array (
+           'name'               => 'Thematics',
+           'singular_name'      => 'Thematic',
+           'all_items'          => __('All thematics'),
+           'add_new'            => __('New thematic'),
+           'add_new_item'       => __('Add new thematic'),
+           'edit_item'          => __("Edit thematic"),
+           'new_item'           => __('New thematic'),
+           'view_item'          => __('View thematic'),
+           'search_items'       => __('Find thematic'),
+           'not_found'          => __("No result"),
+           'not_found_in_trash' => __("No result"),
+           'parent_item_colon'  => __("Thematic parent"),
+           'menu_name'          => 'Thematics',
+       );
+
+        $args = array(
+            'labels'              => $labels,
+            'hierarchical'        => false,
+            'supports'            => array( 'title','thumbnail','editor', 'revisions'),
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'menu_position'       => 3,
+            'menu_icon'           => 'dashicons-admin-customizer',
+            'show_in_nav_menus'   => true,
+            'publicly_queryable'  => true,
+            'exclude_from_search' => false,
+            'has_archive'         => false,
+            'query_var'           => true,
+            'can_export'          => true,
+            'rewrite'             => array( 'slug' => $post_type )
+        );
+
+        register_post_type($post_type, $args );
+    }
+
+
 	/** This is where you add some context
 	 *
 	 * @param string $context context['this'] Being the Twig's {{ this }}.
@@ -65,8 +112,19 @@ class StarterSite extends Timber\Site {
 		$context['notes'] = 'These values are available everytime you call Timber::get_context();';
 		$context['menu'] = new Timber\Menu();
 		$context['site'] = $this;
+		//Homepage thematics
+        $args = array(
+            'post_type' => 'thematics',
+            'posts_per_page' => 4,
+            'orderby' => array(
+                'date' => 'ASC',
+            ),
+        );
+        //send datas ton context
+        $context['thematics'] = Timber::get_posts($args);
 		return $context;
-	}
+
+    }
 
 	public function theme_supports() {
 		// Add default posts and comments RSS feed links to head.

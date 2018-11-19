@@ -1,0 +1,19 @@
+a.cta-white {
+  padding: 5px 15px;
+  border: 2px solid $white-text;
+  font-family: $font-avenir;
+  font-weight: $font-weight-heavy;
+  color: $white-text;
+
+  transition: background-color,color 0.3s ease-in;
+
+  &:hover {
+    background-color: $white-text;
+    color: $grey-footer-bg!important;
+  }
+
+  &:link, &:visited, &:active {
+    text-decoration: none;
+    color: inherit;
+  }
+}
