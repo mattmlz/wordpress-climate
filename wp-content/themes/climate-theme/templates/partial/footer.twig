@@ -47,10 +47,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a href="{{ site.link }}">L'Homme au quotidien</a></td>
-                                <td><a href="{{ site.link }}">L'exploitation des firmes</a></td>
-                                <td><a href="{{ site.link }}">Les catastrophes naturelles</a></td>
-                                <td><a href="{{ site.link }}">Et demain ?</a></td>
+                                {% for subject in thematics %}
+                                <td><a href="{{ subject.link }}">{{ subject.title }}</a></td>
+                                {% endfor %}
                             </tr>
                         </tbody>
                     </table>
