@@ -1,7 +1,7 @@
 <div class="cta-testimonial">
     <h2>Votre participation compte !</h2>
     <p>N'hésitez pas à partager vos témoignages, vos avis et vos tips pour faire évoluer notre blog.</p>
-    <a href="{{ site.link }}/testimonials" class="cta-button cta-testify">
+    <a href="{{ site.link }}/make-testimonial" class="cta-button cta-testify">
         <div class="cta-testify">Témoigner</div>
     </a>
 </div>
@@ -47,10 +47,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><a href="{{ site.link }}">L'Homme au quotidien</a></td>
-                                <td><a href="{{ site.link }}">L'exploitation des firmes</a></td>
-                                <td><a href="{{ site.link }}">Les catastrophes naturelles</a></td>
-                                <td><a href="{{ site.link }}">Et demain ?</a></td>
+                                {% for subject in thematics %}
+                                <td><a href="{{ subject.link }}">{{ subject.title }}</a></td>
+                                {% endfor %}
                             </tr>
                         </tbody>
                     </table>
