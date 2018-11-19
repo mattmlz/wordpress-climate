@@ -10,4 +10,21 @@
             <h1 class="intro-h1">{{post.title}}</h1>
         </div>
     </div>
+
+    <div class="intro-text">
+        {{post.content}}
+    </div>
+
+    <div class="subjects-wrapper">
+        {% for post in thematics %}
+            <div class="subject">
+                <div class="thematic-img">
+                    <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                </div>
+                <div class="thematic-text">
+                    <a class="cta-white" href="{{ post.link }}">{{ post.title }}</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
