@@ -26,7 +26,8 @@ div#nf-form-2-cont {
                       div.nf-field-label {
                         margin-bottom: 0px;
                         color: $white-text;
-                        font-size: 25px;
+                        font-size: 20px;
+                        font-weight: $font-weight-medium;
                       }
                       div.nf-field-element {
                         input#nf-field-5, input#nf-field-6 {
@@ -35,8 +36,9 @@ div#nf-form-2-cont {
                           color: $white-text;
                           font-family: $font-avenir;
                           font-weight: $font-weight-light;
-                          font-size: 20px;
+                          font-size: 15px;
                           border: none;
+                          padding: 0 10px;
                           border-bottom: $green-text 3px solid;
                         }
 
@@ -48,6 +50,7 @@ div#nf-form-2-cont {
                           font-weight: $font-weight-light;
                           font-size: 15px;
                           border: none;
+                          padding: 0 10px;
                           border-bottom: $green-text 3px solid;
                         }
 
