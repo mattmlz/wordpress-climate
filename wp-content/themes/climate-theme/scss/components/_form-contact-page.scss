@@ -1,0 +1,90 @@
+div#nf-form-2-cont {
+  margin-top: 50px;
+  font-family: $font-avenir;
+  width: 600px;
+
+  div.nf-form-wrap.ninja-forms-form-wrap {
+    div.nf-form-layout {
+      form {
+        div {
+          div.nf-before-form-content {
+            nf-section {
+              div.nf-form-fields-required {
+                /*font-weight: $font-weight-light;
+                font-size: 15px;*/
+                display: none;
+              }
+            }
+          }
+
+          div.nf-form-content {
+            nf-fields-wrap {
+              nf-field {
+                div.nf-field-container {
+                  div.nf-field {
+                    div.field-wrap {
+                      div.nf-field-label {
+                        margin-bottom: 0px;
+                        color: $white-text;
+                        font-size: 25px;
+                      }
+                      div.nf-field-element {
+                        input#nf-field-5, input#nf-field-6 {
+                          height: 30px;
+                          background-color: $black-background;
+                          color: $white-text;
+                          font-family: $font-avenir;
+                          font-weight: $font-weight-light;
+                          font-size: 20px;
+                          border: none;
+                          border-bottom: $green-text 3px solid;
+                        }
+
+                        textarea#nf-field-7 {
+                          height: 30px;
+                          background-color: $black-background;
+                          color: $white-text;
+                          font-family: $font-avenir;
+                          font-weight: $font-weight-light;
+                          font-size: 15px;
+                          border: none;
+                          border-bottom: $green-text 3px solid;
+                        }
+
+                        input#nf-field-8.ninja-forms-field.nf-element {
+                          width: 180px;
+                          height: 50px;
+                          margin-top: 20px;
+                          font-family: $font-avenir;
+                          font-weight: $font-weight-heavy;
+                          font-size: 15px;
+                          color: $white-text;
+                          background-color: $green-button;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+
+                          border: 0px solid;
+                          outline: 1px solid;
+                          outline-color: rgba(82, 165, 93, .5);
+                          outline-offset: 0px;
+                          text-shadow: none;
+                          transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+
+                          &:hover {
+                            @include button-hover;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
