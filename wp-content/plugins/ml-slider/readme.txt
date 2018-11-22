@@ -3,7 +3,7 @@ Contributors: matchalabs, DavidAnderson, dnutbourne, kbat82
 Tags: wordpress slideshow,seo,slideshow,slider,widget,wordpress slider,image slider,flexslider,flex slider,nivoslider,nivo slider,responsive,responsive slides,coinslider,coin slider,slideshow,carousel,responsive slider,vertical slides
 Donate link: https://david.dw-perspective.org.uk/donate
 Requires at least: 3.5
-Stable tag: 3.10.1
+Stable tag: 3.10.2
 Tested up to: 5.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -157,7 +157,11 @@ See https://www.metaslider.com/documentation/image-cropping/
 
 == Changelog ==
 
-= 3.10.1 - 2018/Nov/12 =
+= 3.10.2 - 2018/Nov/21 =
+
+* FIX: Fixes bug in with captions in NivoSlider
+
+= 3.10.1 - 2018/Nov/20 =
 
 * TWEAK: Removes redundant height and width attributes
 * FIX: Fixes bug in PHP 5.2 where images would not import
@@ -716,4 +720,4 @@ More info/Comments: http://www.metaslider.com/coming-soon-meta-slider-2-6-free/
 * Initial version
 
 == Upgrade Notice ==
-* 3.10.1 : This version fixes various bugs and issues reported by users.
+* 3.10.2 : Upgrade now if your captions disappeared using NivoSlider
