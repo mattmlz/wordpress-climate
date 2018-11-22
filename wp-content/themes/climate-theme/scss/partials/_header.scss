@@ -15,9 +15,11 @@ header.header {
     flex-direction: row;
     justify-content: space-between;
 
-    img.header-logo {
-      width: 139px;
-      height: 40px;
+    a.home {
+      img.header-logo {
+        width: 139px;
+        height: 40px;
+      }
     }
 
     div.nav-links {
