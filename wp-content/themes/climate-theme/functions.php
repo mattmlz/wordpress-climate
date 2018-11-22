@@ -157,7 +157,6 @@ class StarterSite extends Timber\Site {
 		//Homepage thematics
         $args_thematics = array(
             'post_type' => 'thematics',
-            'posts_per_page' => 4,
             'orderby' => array(
                 'date' => 'ASC',
             ),
