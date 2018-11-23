@@ -19,6 +19,25 @@
     </article>
 
     <div class="discover">
+        <h1>Nos articles</h1>
+        <h2>Découvrez d'autres articles</h2>
 
+        <div class="discover-articles-wrapper">
+            {% for article in articles|slice(0, 6) %}
+                <div class="article">
+
+                    <div class="thumbnail-image">
+                        <img src="{{ article.thumbnail.src }}" alt="{{ article.title }}">
+                    </div>
+
+                    <div class="content-article">
+                        <p class="date">{{ article.date }}</p>
+                        <h3 class="title">{{ article.title }}</h3>
+                        <div class="extract">{{ article.preview.length(15).read_more('Lire plus') }}</div>
+                    </div>
+
+                </div>
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}
