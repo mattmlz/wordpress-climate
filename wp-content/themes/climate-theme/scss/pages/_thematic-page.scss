@@ -85,7 +85,7 @@ section.content-wrapper {
             font-size: 22px;
             color: $black-background!important;
             margin-bottom: 10px!important;
-            @include link-interaction
+            @include link-interaction;
           }
 
           p.date {
