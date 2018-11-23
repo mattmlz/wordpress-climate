@@ -2,7 +2,6 @@ section.content-wrapper {
   background-color: $black-background;
 
   div.wrapper.homepage {
-    margin: 0 100px;
     padding-top: 100px;
     font-family: $font-avenir;
     color: $white-text;
@@ -22,6 +21,7 @@ section.content-wrapper {
     }
 
     div.slider {
+      width: 100vw;
       height: 80vh;
       background-image: url("../../../../../wp-content/uploads/2018/11/bg_landingpage.png");
       display: flex;
@@ -47,6 +47,7 @@ section.content-wrapper {
     }
 
     div.block {
+      margin: 0 100px;
       padding: 100px 0;
     }
 

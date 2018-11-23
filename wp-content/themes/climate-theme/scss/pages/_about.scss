@@ -2,12 +2,12 @@ section.content-wrapper {
   background-color: $black-background;
 
   div.wrapper.about {
-    margin: 0 100px;
     padding-top: 160px;
     font-family: $font-avenir;
     color: $white-text;
 
     div.sub-header {
+      width: 100vw;
       position: relative;
       display: flex;
       justify-content: center;
@@ -55,6 +55,7 @@ section.content-wrapper {
     }
 
     div.the-team {
+      margin: 0 100px;
       h2 {
         font-weight: $font-weight-black;
         font-size: 35px;
