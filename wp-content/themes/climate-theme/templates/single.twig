@@ -17,12 +17,25 @@
         <h2>Nos derniers articles</h2>
 
         <div class="articles-wrapper">
+            {{ post.slug }}
 
-            {% for article in articles %}
+            {% for post in articles %}
                 <div class="article">
-                    <a href="{{ article.link }}" class="post-title">{{ article.title  }}</a>
-                    <p class="date">{{ article.date| date('j F Y') }}</p>
-                    <div>{{ article.category }}</div>
+                    <div class="post-thumnail">
+                        <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
+                    </div>
+                    <div class="content">
+
+                        <span class="tag">
+                            {% for tag in post.tags %}
+                                {{ tag }}
+                            {% endfor %}
+                        </span>
+
+                        <a href="{{ post.link }}" class="post-title">{{ post.title }}</a>
+
+                        <p class="date">{{ post.date }}</p>
+                    </div>
                 </div>
             {% endfor %}
 
