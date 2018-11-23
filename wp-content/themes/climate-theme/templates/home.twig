@@ -44,7 +44,7 @@
 
         <div class="articles-wrapper">
 
-            {% for post in posts|slice(0, 3) %}
+            {% for post in articles|slice(0, 3) %}
                 <div class="article">
                     <div class="post-thumnail">
                         <img src="{{ post.thumbnail.src }}" alt="{{ post.title }}">
