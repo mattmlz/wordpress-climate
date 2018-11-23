@@ -18,10 +18,11 @@
 
         <div class="articles-wrapper">
 
-            {% for article in articles.posts %}
+            {% for article in articles %}
                 <div class="article">
                     <a href="{{ article.guid }}" class="post-title">{{ article.post_title  }}</a>
                     <p class="date">{{ article.post_date| date('j F Y') }}</p>
+                    <div>{{ article.category }}</div>
                 </div>
             {% endfor %}
 
