@@ -17,20 +17,20 @@
         <h2>Nos derniers articles</h2>
 
         <div class="articles-wrapper">
-            {{ post.slug }}
 
             {% for article in articles %}
-                if
-                <div class="article">
-                    <div class="post-thumnail">
-                        <img src="{{ article.thumbnail.src }}" alt="{{ article.title }}">
-                    </div>
-                    <div class="content">
-                        <a href="{{ article.link }}" class="post-title">{{ article.title }}</a>
+                {% if  post.slug in article.link %}
+                    <div class="article">
+                        <div class="post-thumnail">
+                            <img src="{{ article.thumbnail.src }}" alt="{{ article.title }}">
+                        </div>
+                        <div class="content">
+                            <a href="{{ article.link }}" class="post-title">{{ article.title }}</a>
 
-                        <p class="date">{{ article.date }}</p>
+                            <p class="date">{{ article.date }}</p>
+                        </div>
                     </div>
-                </div>
+                {% endif %}
             {% endfor %}
 
         </div>
