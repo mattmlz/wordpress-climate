@@ -61,6 +61,10 @@ section.content-wrapper {
 
           div.strong-form-inner {
 
+            p.required-notice {
+              font-size: 12px;
+            }
+
             form#wpmtst-submission-form {
               display: flex;
               flex-direction: row;
@@ -78,6 +82,12 @@ section.content-wrapper {
               }
 
               div.field-email {
+                input {
+                  width: 660px;
+                }
+              }
+
+              div.field-post_title {
                 input {
                   width: 660px;
                 }

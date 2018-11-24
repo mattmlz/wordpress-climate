@@ -56,6 +56,7 @@ section.content-wrapper {
         div.strong-content {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
 
           div.testimonial {
             margin: 30px;
