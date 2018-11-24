@@ -28,6 +28,14 @@ section.content-wrapper {
       div.intro-title {
         position: absolute;
         text-align: center;
+        padding: 0 10vw;
+
+        p.article-theme {
+          text-align: center;
+          color: $yellow-background;
+          text-transform: uppercase;
+          margin-bottom: 20px;
+        }
 
         h1.intro-h1 {
           font-weight: $font-weight-black;
@@ -38,13 +46,7 @@ section.content-wrapper {
     }
 
     article.content-article {
-      margin: 100px 0;
-
-      p.article-theme {
-        text-align: center;
-        color: $yellow-background;
-        text-transform: uppercase;
-      }
+      margin: 70px 10vw;
 
       div.article-body {
         display: flex;
