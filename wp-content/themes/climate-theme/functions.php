@@ -52,6 +52,7 @@ class StarterSite extends Timber\Site {
 		add_action( 'init', array( $this, 'add_thematics' ) );
 		add_action( 'init', array( $this, 'add_team_members' ) );
 		add_action( 'init', array( $this, 'add_articles' ) );
+        add_action( 'wp_enqueue_scripts', array( $this, 'add_scripts' ) );
 		parent::__construct();
 	}
 	/** This is where you can register custom post types. */
@@ -184,6 +185,10 @@ class StarterSite extends Timber\Site {
         );
 
         register_post_type($post_type, $args );
+    }
+
+    public function add_scripts() {
+        wp_enqueue_script( 'testimonials', get_template_directory_uri() . '/assets/js/testimonials.js', array(), '1.0.0', true );
     }
 
 
