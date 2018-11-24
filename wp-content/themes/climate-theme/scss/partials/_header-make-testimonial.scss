@@ -1,0 +1,43 @@
+header.header {
+  width: 100vw;
+  height: 150px;
+  background-color: $black-background;
+  color: $white-text;
+  font-family: $font-avenir;
+  position: fixed;
+  z-index: 99999999;
+
+
+  nav.top-navbar-make-testimonial {
+    padding: 40px 0;
+    margin: 0 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a.home {
+      img.header-logo {
+        width: 139px;
+        height: 40px;
+      }
+    }
+
+    div.nav-links {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      p.nav-link {
+        margin: 0 20px;
+
+        a.nav-link {
+          @include link-interaction;
+        }
+      }
+    }
+    
+    a.cta-button {
+      visibility: hidden;
+    }
+  }
+}
