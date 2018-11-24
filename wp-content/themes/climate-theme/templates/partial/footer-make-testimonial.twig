@@ -1,0 +1,61 @@
+<div class="cta-testimonial">
+    <h2>Votre participation compte !</h2>
+    <p>N'hésitez pas à partager vos témoignages, vos avis et vos tips pour faire évoluer notre blog.</p>
+</div>
+
+<div class="newsletter">
+    <h2>Newsletter</h2>
+    <p>Ne ratez aucun article</p>
+
+    {% include 'partial/mailchimp-form.twig' %}
+</div>
+
+<div class="footer-links">
+    <table class="main-footer-links" width="100%" cellspacing="0" cellpadding="0">
+        <tbody>
+        <tr>
+            <td class="logo">
+                <img src="{{ site.link }}/wp-content/uploads/2018/11/logo-footer.png" alt="Ecologia">
+            </td>
+            <td id="menu">
+                <table class="sub-table" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th>Menu</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="{{ site.link }}">Accueil</a></td>
+                        <td><a href="{{ site.link }}/testimonials">Témoignages</a></td>
+                        <td><a href="{{ site.link }}/about">À propos</a></td>
+                        <td><a href="{{ site.link }}/contact">Contact</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+
+            <td id="subjects">
+                <table class="sub-table" cellspacing="0" cellpadding="0">
+                    <thead>
+                    <tr>
+                        <th>Sujets</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        {% for subject in thematics %}
+                            <td><a href="{{ subject.link }}">{{ subject.title }}</a></td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="copyright">
+    Copyright {{"now"|date('Y')}} - Ecologia, Tous droits réservés
+</div>
