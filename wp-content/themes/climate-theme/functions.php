@@ -201,6 +201,7 @@ class StarterSite extends Timber\Site {
 		$context['site'] = $this;
 		//Homepage thematics
         $args_thematics = array(
+            'posts_per_page' => -1,
             'post_type' => 'thematics',
             'orderby' => array(
                 'date' => 'ASC',
@@ -208,10 +209,12 @@ class StarterSite extends Timber\Site {
         );
         //Team members
         $args_team = array(
+            'posts_per_page' => -1,
             'post_type' => 'team',
         );
         //Articles
         $args_articles = array(
+            'posts_per_page' => -1,
             'post_type' => 'articles',
         );
 
