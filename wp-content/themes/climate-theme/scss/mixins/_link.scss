@@ -1,11 +1,7 @@
 @mixin link-interaction {
-  background: linear-gradient(to bottom, $green-text 0%, $green-text 100%);
-  background-position: 0 100%;
-  background-repeat: repeat-x;
-  background-size: 0px 0px;
   color: $white-text;
   text-decoration: none;
-  transition: background-size .2s;
+  transition: color 0.3s;
 
   &:hover {
     @include link-hover

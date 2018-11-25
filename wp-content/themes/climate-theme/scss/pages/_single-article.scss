@@ -186,7 +186,11 @@ section.content-wrapper {
 
               a {
                 font-weight: $font-weight-black!important;
-                color: $black-background!important;
+                color: $yellow-background!important;
+                display: block!important;
+                font-size: 16px!important;
+                text-transform: uppercase!important;
+                margin-top: 15px!important;
                 @include link-interaction;
               }
             }

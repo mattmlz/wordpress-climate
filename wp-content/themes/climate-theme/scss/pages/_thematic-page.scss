@@ -27,11 +27,13 @@ section.content-wrapper {
       div.intro {
         position: absolute;
         text-align: center;
+        max-width: 880px;
 
         h1.intro-h1 {
           font-weight: $font-weight-black;
           font-size: 45px;
           text-transform: uppercase;
+          line-height: 55px;
         }
 
         p {
@@ -39,6 +41,7 @@ section.content-wrapper {
           margin-top: 30px;
           font-family: $font-avenir;
           color: $white-text;
+          line-height: 22px;
 
           span {
             font-weight: $font-weight-heavy;
@@ -73,7 +76,6 @@ section.content-wrapper {
 
         div.article {
           margin-top: 30px;
-          margin-bottom: 100px;
           position: relative;
 
           div.post-thumnail {

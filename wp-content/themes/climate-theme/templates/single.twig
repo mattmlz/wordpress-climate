@@ -19,7 +19,7 @@
         <div class="articles-wrapper">
 
             {% for article in articles %}
-                {% if  post.slug in article.link %}
+                {% if post.slug in article.link %}
                     <div class="article">
                         <div class="post-thumnail">
                             <img src="{{ article.thumbnail.src }}" alt="{{ article.title }}">
