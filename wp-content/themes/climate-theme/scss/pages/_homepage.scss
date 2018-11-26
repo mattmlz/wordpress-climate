@@ -157,9 +157,9 @@ section.content-wrapper {
             font-weight: $font-weight-black;
             font-size: 12px;
             padding: 5px;
+            padding-left: 0;
             margin-bottom: 15px;
             color: $green-text;
-            border: 2px solid $green-button;
           }
 
           a.post-title {

@@ -18,6 +18,7 @@ div.make-testimonial-form {
         flex-wrap: wrap;
         justify-content: center;
         font-weight: $font-weight-semibold;
+        font-size: 18px;
 
         div.field-client_first_name, div.field-client_last_name {
           input {
@@ -32,10 +33,6 @@ div.make-testimonial-form {
 
         div.field-client_first_name {
           margin-right: 40px;
-          padding: 10px;
-          font-family: $font-avenir;
-          font-size: 15px;
-          font-weight: $font-weight-medium;
         }
 
         div.field-email {
